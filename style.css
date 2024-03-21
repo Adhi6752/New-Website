@@ -1,0 +1,395 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    
+  }
+
+
+  :root {
+    --colour1:#007F73;
+    --colour2: #4CCD99;
+    --colour3:#FFC700;
+    --colour4:#FFF455;
+  }
+/********************** Nav Bar starting **********************************/
+
+  header{
+    position:fixed;
+    width:100%;
+    min-height: 66px;
+    background:var(--colour1);
+    padding:0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ .logo{
+    height:75px;
+    width: 130px;
+  }
+
+  header ul {
+    position: relative;
+  }
+
+  header ul li{
+    position: relative;
+    list-style: none;
+    float:left;
+  }
+
+  header ul li .a{
+    color:var(--colour4);
+    font-size: 1.1em;
+    padding :20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header ul li .a:hover{
+    color: var(--colour3);
+  }
+
+  header ul li ul{
+    position:absolute;
+    left:0;
+    width:200px;
+    display: none;
+    transition: 0.5s;
+    
+  }
+  header ul li:hover ul{
+    display: block;
+  }
+
+
+  header ul li ul li{
+    position: relative;
+    width:100%;
+    background:var(--colour2) ;
+    
+  }
+  
+
+  .button{
+    padding:7px 15px;
+    border-radius:20px;
+    font-size: medium;
+    color: var(--colour1);
+    background-color: var(--colour4);
+    border: 1px solid var(--colour4) ;
+
+  }
+
+  .button:hover {
+    background-color: var(--colour3);
+    border: 1px solid var(--colour3) ;
+  }
+  
+@media(max-width:970px){
+    header{
+        padding :10px 20px; 
+    }
+    .button{
+        display: none;
+    }
+    header nav {
+        position :absolute;
+        width:100%;
+        top:99px;
+        left:0;
+        background-color:var(--colour2);
+        display: none;
+    }
+    header.active nav{
+        display: initial;
+        
+    }
+
+    header nav ul li{
+        width: 100%;
+        
+    }
+    header nav ul li ul{
+        position: relative;
+        width: 100%;
+        left:0;
+       
+    }
+    header nav ul li ul li{
+        background-color: var(--colour1);
+    }
+    .menuToggle{
+        position:relative;
+        width:40px;
+        height:50px;
+        cursor:pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuToggle::before {
+        content:'';
+        position:absolute;
+        width: 100%;
+        height:3px;
+        background: var(--colour3);
+        transform: translateY(-12px);
+        box-shadow: 0 12px var(--colour3);
+    
+    }
+
+    .menuToggle::after{
+        content:'';
+        position:absolute;
+        width: 100%;
+        height:3px;
+        background: var(--colour3);
+        transform: translateY(12px);
+    }
+
+    header.active .menuToggle::before{
+        transform: rotate(45deg);
+        box-shadow: 0 0 #fff;
+    }
+    header.active .menuToggle::after{
+        transform: rotate(315deg);
+    }
+
+}
+/********************** Nav Bar Ending **********************************/
+
+
+/********************** Pictures starting **********************************/
+.top{
+    padding-top: 67px;
+}
+
+/********************** pictures Ending **********************************/
+
+/********************** Definition starting **********************************/
+
+.paragraphs{
+    padding: 10px 200px;
+    display: flex;
+}
+.paragraphs div{
+    padding: 30px;
+    color: var(--colour1);
+}
+@media(max-width:970px){
+    .paragraphs{
+        display: inline;
+    }
+    
+    
+}
+
+/********************** Definition ending **********************************/
+
+
+
+.client-container{
+    padding:10px 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 5px;
+}
+
+.our-clients h3{ text-align: center; color: var(--colour1); padding-top: 10px;}
+.client{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+@media(max-width:970px){
+    .client-container{
+        padding: 10px 20px;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+}
+
+
+
+
+
+
+/*************************************** Accordion Starting *********************************/
+.accordion{ 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background:#EEEEEE;
+    padding:10px 200px;
+}
+.accordion h3{
+    color: var(--colour1);
+}
+.accordion .contentBX {
+    
+    margin: 10px 20px;
+}
+
+.accordion .contentBX .label{
+    padding: 10px;
+    background:var(--colour1);
+    color: var(--colour4);
+    cursor: pointer;
+    
+}
+
+
+
+.accordion .contentBX .content{
+    background: var(--colour2);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    display: flex;
+    
+}
+
+.accordion .contentBX.active .content{
+    height: 200px;
+    padding: 10px;
+}
+
+#contentImage{
+    width:150px;
+    height:70px;
+}
+
+.sub-content{
+    width:25%;
+    align-items: center;
+    height: 100%;
+    color: var(--colour1);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-content img{
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+}
+@media(max-width:970px){
+    .accordion{padding:10px 10px;}
+    #contentImage{
+        height:70px;
+        width: 70px;
+    }
+}
+
+@media(max-width:819px){
+    .accordion .contentBX .content{
+        display: block;
+    }
+    .accordion .contentBX.active .content{
+        height: 620px;
+        padding: 10px;
+        display: block;
+    }
+    .sub-content{
+        display: block;
+        width: 100%;
+        
+        height: 150px;
+    }
+}
+
+.label{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.label div{display: flex;}
+.label p{
+    color: var(--colour4);
+padding: 20px 10px;
+font-size: 2em;
+float: right;
+}
+
+.label h5{
+    padding:20px 10px;
+}
+
+.div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/**************************** Accordion Ending*****************************/
+
+
+/***************************************Footer Starting****************************/
+
+.footer div button{
+    font-size: 2em;
+    float: right;
+    margin-top:2px;
+    margin-right: 10px;
+    border-radius:55px ;
+    padding: 5px 15px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-color:var(--colour4);
+    border: 1px solid var(--colour4);
+    text-align: center;
+    color:var(--colour1);
+}
+.footer{background: var(--colour1);}
+.footer div{width: 100%;}
+.footer div button:hover{
+    background-color: var(--colour3);
+    border: 1px solid var(--colour3);
+    color:var(--colour2);
+}
+
+#fcontainer{
+    padding:10px 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 5px;
+    color: var(--colour3);
+}
+
+#fcontainer div{
+    width: 100%;
+    height: 100%;
+    
+    margin-left: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    
+}
+.fservice{
+    text-decoration: none;
+    line-height: 32px;
+    color: var(--colour4);
+}
+@media(max-width:970px){
+    #fcontainer{
+        padding: 10px 20px;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+}
