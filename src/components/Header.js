@@ -14,19 +14,28 @@ const Header =() =>{
                 else setIsContainerActive(false);}}></div>
             <nav>
                 <ul>
-                    <li><Link to="/" className="a">Our services</Link>
+                <li><Link to="/" className="a">About us</Link>
                     <ul>
-                        <li><Link to="/" className="a">Modern Work</Link></li>
+                    <li><Link to="/" className="a">About Us</Link></li>
+                        <li><Link to="/" className="a">Team</Link></li>
+                        <li><Link to="/" className="a">Solivar's Mission</Link></li>
+                       
+                    </ul>
+                    </li>
+                    <li><Link to="/" className="a">Our Services</Link>
+                    <ul>
+                    <li><Link to="/" className="a">Application Development</Link></li>
+                        <li><Link to="/" className="a">Quality Engineering</Link></li>
                         <li><Link to="/" className="a">Cloud Modernisation</Link></li>
-                        <li><Link to="/" className="a">Cloud GOvernance</Link></li>
+                        <li><Link to="/" className="a">Cloud Governance</Link></li>
                         <li><Link to="/" className="a">Data</Link></li>
                         <li><Link to="/" className="a">Analytics</Link></li>
                     </ul>
                     </li>
                     <li><Link to="/" className="a">Our Work</Link></li>
                     <li><Link to="/" className="a">Blogs</Link></li>
-                    <li><Link to="/" className="a">Join the crew</Link></li>
-                    <li><Link to="/" className="a">our story</Link></li>
+                    <li><Link to="/" className="a">Join The Crew</Link></li>
+                    <li><Link to="/" className="a">Our Story</Link></li>
                 </ul>
                 
             </nav>

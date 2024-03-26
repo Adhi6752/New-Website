@@ -46,39 +46,42 @@ const Body = () => {
                 <div className={`contentBX ${(service[0]==1) ? "active" : ""}`}>
                     <div className="label" onClick={() => Accordion(0)}>
                         <div><img  id="contentImage" />
-                        <h5>Modern Data</h5></div>
+                        <h5>Application Development</h5></div>
                         <div><p>{(service[0]==0)?'+':'-'}</p></div>
                     </div>
                     <div className="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </p>
+                        <p>
+                        We are committed to offering our customers tailored, cost-effective, and premium-grade products and services. Our dedicated and adept teams exemplify a natural flexibility when it comes to tackling projects, ensuring we meet the diverse needs of our clientele.
+
+                        
+                                </p>
                     </div>
                 </div>
                 <div className={`contentBX ${(service[1]==1) ? "active" : ""}`}>
                     <div className="label" onClick={() => Accordion(1)}>
                         <div><img id="contentImage"  />
-                        <h5>Data Governance</h5></div>
+                        <h5>Quality Engineering</h5></div>
                         <p>{(service[1]==0)?'+':'-'}</p>
                     </div>
                     <div className="content">
                         <div className="sub-content">
                             <img />
-                            <h4>SECURE REMOTE WORK</h4>
+                            <h4>Functional Testing</h4>
+                            <p><center>Ensure your workforce can work securely anywhere, any time, on any device</center></p>
+                        </div>
+                        <div className="sub-content">
+                            <img />
+                            <h4>Automation Solutions</h4>
                             <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
                         </div>
                         <div className="sub-content">
                             <img />
-                            <h4>SECURE REMOTE WORK</h4>
+                            <h4>Load/Performance Testing</h4>
                             <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
                         </div>
                         <div className="sub-content">
                             <img />
-                            <h4>SECURE REMOTE WORK</h4>
-                            <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
-                        </div>
-                        <div className="sub-content">
-                            <img />
-                            <h4>SECURE REMOTE WORK</h4>
+                            <h4>Accessibility Testing</h4>
                             <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
                         </div>
                     </div>
