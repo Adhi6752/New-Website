@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import image1 from "./images/image1.jpg"
-import image2 from "./images/image2.jpg"
+import image2 from "./images/logo2.png"
 import image3 from "./images/image3.jpg"
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -72,17 +72,17 @@ const Body = () => {
                         <div className="sub-content">
                             <img />
                             <h4>Automation Solutions</h4>
-                            <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
+                            <p><center>Ensure your workforce can work securely anywhere, any time, on any device</center></p>
                         </div>
                         <div className="sub-content">
                             <img />
                             <h4>Load/Performance Testing</h4>
-                            <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
+                            <p><center>Ensure your workforce can work securely anywhere, any time, on any device</center></p>
                         </div>
                         <div className="sub-content">
                             <img />
                             <h4>Accessibility Testing</h4>
-                            <p>Ensure your workforce can work securely anywhere, any time, on any device</p>
+                            <p><center>Ensure your workforce can work securely anywhere, any time, on any device</center></p>
                         </div>
                     </div>
                 </div>
@@ -113,17 +113,45 @@ const Body = () => {
             <div className="our-clients">
                 <h3>Our Clients</h3>
                 <div className="client-container">
+            
+                    <div className="client">
+                       <center><img src={image1} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image2} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image1} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image2} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image1} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image2} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image1} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image2} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
+                        <div className="client">
+                       <center><img src={image1} alt="client logo"  width="75" height="75" />
+                       </center>
+                        </div>
 
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-                    <div className="client"><img alt="img" /></div>
-
-
+                 
                 </div>
 
             </div>
